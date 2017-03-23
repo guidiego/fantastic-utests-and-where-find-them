@@ -1,0 +1,11 @@
+language: python
+python:
+    - "3.5"
+install: "pip install -r requirements.txt"
+script:
+    - py.test --flakes
+    - py.test --pep8
+    - py.test --mccabe
+    - py.test --cov=app
+after_success:
+    - coveralls
