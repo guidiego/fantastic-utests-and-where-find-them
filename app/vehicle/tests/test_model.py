@@ -35,3 +35,7 @@ def test_is_familiar_when_car_is(vectra):
 
 def test_is_familiar_when_car_isnt(ka):
     assert ka.is_familiar() is False
+
+
+def test_get_sell_name_is_correct(vectra):
+    assert vectra.get_sell_name() == '[SELL] Vectra 2016 - 5 doors | 450 hp'
